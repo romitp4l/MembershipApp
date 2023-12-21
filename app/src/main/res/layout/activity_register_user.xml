@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:layout_gravity="fill_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registration"
+        android:id="@+id/Label"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:padding="2dp"
+        android:textStyle="italic"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_height="wrap_content"
+            android:id="@+id/UserName"
+            android:selectAllOnFocus="true"
+            android:lines="1"
+            android:hint="Name"
+            android:inputType="text"
+            android:layout_width="fill_parent"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="fill_horizontal">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_height="wrap_content"
+            android:id="@+id/UserFatherName"
+            android:selectAllOnFocus="true"
+            android:lines="1"
+            android:hint="Enter your Father's Name"
+            android:inputType="text"
+            android:layout_width="fill_parent"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="fill_horizontal">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:id="@+id/UserMobileNo"
+            android:selectAllOnFocus="true"
+            android:lines="1"
+            android:hint="Enter your Mobile No."
+            android:inputType="number"
+            android:layout_width="fill_parent"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="fill_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:id="@+id/UserEmail"
+            android:selectAllOnFocus="true"
+            android:lines="1"
+            android:hint="Enter your email-address"
+            android:inputType="textEmailAddress"
+            android:layout_width="fill_parent"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="fill_horizontal" />
+    </LinearLayout><LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:id="@+id/UserAddress"
+        android:selectAllOnFocus="true"
+        android:lines="1"
+        android:hint="Enter your Address."
+        android:inputType="textMultiLine"
+        android:layout_width="fill_parent"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="fill_horizontal" />
+</LinearLayout><LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:id="@+id/UserUnderGraduateCompletionYear"
+        android:selectAllOnFocus="true"
+        android:lines="1"
+        android:hint="Enter your year of completing under-graduation"
+        android:inputType="date"
+        android:layout_width="fill_parent"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="fill_horizontal" />
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:selectAllOnFocus="true"
+            android:lines="1"
+            android:id="@+id/UserPassword"
+            android:hint="Please enter a password"
+            android:inputType="textPassword"
+            android:layout_gravity="fill_horizontal"
+            android:layout_width="match_parent">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:selectAllOnFocus="true"
+            android:lines="1"
+            android:id="@+id/UserConfirmPassword"
+            android:hint="Please confirm your new password"
+            android:inputType="textPassword"
+            android:layout_gravity="fill_horizontal"
+            android:layout_width="match_parent">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent">
+        <Button
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/Cancel"
+            android:id="@+id/nRegister"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_weight="1">
+        </Button>
+        <Button
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/Clear"
+            android:id="@+id/nClear"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_weight="1">
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent">
+        <Button
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/Submit"
+            android:id="@+id/nBack"
+            android:clickable="true" android:layout_width="fill_parent" android:layout_weight="1"></Button>
+    </LinearLayout>
+</LinearLayout>

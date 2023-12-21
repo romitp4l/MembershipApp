@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MembershipApp</string>
+    <string name="registration">Provide Your details carefully.</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Clear">Clear all fields.</string>
+    <string name="Submit">Register user.</string>
 </resources>
