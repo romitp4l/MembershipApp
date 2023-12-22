@@ -16,6 +16,9 @@
         android:theme="@style/Theme.MembershipApp"
         tools:targetApi="31">
         <activity
+            android:name=".DashboardActiviy"
+            android:exported="false" />
+        <activity
             android:name=".ViewMembersActivity"
             android:exported="false" />
         <activity
@@ -26,18 +29,15 @@
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
+            android:exported="true"></activity> <!-- Remove the intent-filter from MainActivity if it's not intended to be a launcher activity -->
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Remove the intent-filter from MainActivity if it's not intended to be a launcher activity -->
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-
-            <!-- Remove the intent-filter from here -->
         </activity>
     </application>
 

@@ -67,13 +67,15 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/flotingButton"
-        android:src="@drawable/next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/next"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.895"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="659dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"></com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

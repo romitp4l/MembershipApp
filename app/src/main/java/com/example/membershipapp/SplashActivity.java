@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity  implements View.OnClickListener {
     TextView textView;
     Button floatingActionButton;
 
@@ -19,21 +19,28 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         textView = findViewById(R.id.phone_number);
 
-         String phoneNumber = SimInfoHelper.getPhoneNumber(this);
+         //String phoneNumber = SimInfoHelper.getPhoneNumber(this);
        // String phoneNumber = PhoneNumberUtils.getPhoneNumber(this);
 
-        textView.setText(phoneNumber);
-        Toast.makeText(this, "Phone Number: " + phoneNumber, Toast.LENGTH_LONG).show();
+       // textView.setText(phoneNumber);
+       // Toast.makeText(this, "Phone Number: " + phoneNumber, Toast.LENGTH_LONG).show();
 
         floatingActionButton=findViewById(R.id.flotingButton);
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
+       floatingActionButton.setOnClickListener(this);
 
-    };
+
+    }
+
+    public void onClick(View view) {
+        // Handle click events here
+        if (view.getId() == R.id.flotingButton) {
+            // Code to execute when the FloatingActionButton is clicked
+
+            // Create an Intent to start the SecondActivity
+            Intent intent = new Intent(SplashActivity.this, ViewMembersActivity.class);
+
+            // Start the SecondActivity
+            startActivity(intent);
+        }
     }
 }
