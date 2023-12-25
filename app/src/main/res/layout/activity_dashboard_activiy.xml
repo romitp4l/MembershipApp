@@ -6,4 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".DashboardActiviy">
 
+
+    <TextView
+        android:layout_width="373dp"
+        android:layout_height="48dp"
+        android:text="Previosly typed data on the app screen"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/typedMobileNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/typedMobileNo"
+        android:layout_width="264dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="mobileNo"></TextView>
+
+    <TextView
+        android:id="@+id/typedPassword"
+        android:layout_width="284dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typedMobileNo"
+        app:layout_constraintVertical_bias="0.066"
+        tools:text="password"></TextView>
+
+
+    <TextView
+        android:layout_width="373dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:text="fetched datafrom database"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typedPassword"
+        app:layout_constraintVertical_bias="0.0"></TextView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

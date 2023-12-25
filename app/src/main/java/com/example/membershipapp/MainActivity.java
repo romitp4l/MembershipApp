@@ -12,6 +12,14 @@ import android.widget.Toast;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener {
+
+
+    /*
+
+    this is the splash screen of the app .
+
+    */
+
     TextView textView;
     FloatingActionButton floatingActionButton;
 
